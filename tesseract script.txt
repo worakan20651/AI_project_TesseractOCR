@@ -1,0 +1,5 @@
+TESSDATA_PREFIX=../../../../usr/local/share/tessdata make training MODEL_NAME=tha-hand START_MODEL=tha TESSDATA=../../../../usr/local/share/tessdata MAX_ITERATIONS=1000
+
+TESSDATA_PREFIX=../../../../usr/local/share/tessdata make training MODEL_NAME=tha-hand START_MODEL=tha GROUND_TRUTH_DIR=tha-hand-ground-truth  TESSDATA=../../../../usr/local/share/tessdata MAX_ITERATIONS=1000
+
+sudo cp tha.traineddata /usr/local/share/tessdata
