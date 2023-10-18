@@ -1,0 +1,16 @@
+/* ในไฟล์ CSS
+@media (max-width: 768px) {
+    .componentStyle {
+      max-width: none;
+    }
+  }
+   */
+   body {
+    background-image: url("https://cdn.discordapp.com/attachments/1152885771527786526/1153260842456993914/gradient-7258997_640.png?ex=651d2fdb&is=651bde5b&hm=103c99c5c410182f1d9b7229f4b093851d3cf1f17d55bc6ca2b3ffe64d131fe6&");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0; /* ลบ margin ของ body ที่เป็นค่าเริ่มต้น */
+    padding: 0; /* ลบ padding ของ body ที่เป็นค่าเริ่มต้น */
+    font-family: Arial, sans-serif; /* เปลี่ยนแบบอักษรตามที่ต้องการ */
+  }
+

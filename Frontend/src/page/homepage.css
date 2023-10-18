@@ -1,0 +1,50 @@
+/* @media (max-width: 768px) { */
+  .upload-gen-container {
+    display: block; /* เปลี่ยนการแสดงผลเป็น block ให้ข้อความแสดงเต็มแนว */
+  }
+
+  .upload-gen-container > div {
+    flex: none; /* ลบ flex ให้ไม่ยืดขยาย */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+  }
+/* } */
+
+body {
+  background-image: url("https://cdn.pnghd.pics/data/22/blank-wallpaper-59.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0; /* ลบ margin ของ body ที่เป็นค่าเริ่มต้น */
+  padding: 0; /* ลบ padding ของ body ที่เป็นค่าเริ่มต้น */
+  font-family: Arial, sans-serif; /* เปลี่ยนแบบอักษรตามที่ต้องการ */
+}
+
+.upload-gen-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างหากต้องการ */
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.upload-gen-container > div {
+  flex: 1;
+  
+   /* เพิ่มระยะห่างระหว่าง UploadFile และ GenTextBox */
+}
+
+.upload-file {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอนภายใน .upload-file */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้งภายใน .upload-file */
+  margin-right: 10px;
+}
+
+.gen-text-box {
+  flex: 1;
+  display: flex;
+  justify-content: left; /* จัดให้อยู่ตรงกลางแนวนอนภายใน .upload-file */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้งภายใน .upload-file */
+}

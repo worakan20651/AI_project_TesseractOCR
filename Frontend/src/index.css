@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Kanit', sans-serif;
+}
+
+/* 
+@media (max-width: 768px) {
+    .componentStyle {
+      max-width: none;
+    }
+  } */
