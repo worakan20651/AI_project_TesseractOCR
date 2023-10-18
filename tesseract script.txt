@@ -1,5 +1,15 @@
 TESSDATA_PREFIX=../../../../usr/local/share/tessdata make training MODEL_NAME=tha-hand START_MODEL=tha TESSDATA=../../../../usr/local/share/tessdata MAX_ITERATIONS=1000
 
 TESSDATA_PREFIX=../../../../usr/local/share/tessdata make training MODEL_NAME=tha-hand START_MODEL=tha GROUND_TRUTH_DIR=tha-hand-ground-truth  TESSDATA=../../../../usr/local/share/tessdata MAX_ITERATIONS=1000
+TESSDATA_PREFIX=../../../../usr/local/share/tessdata make training MODEL_NAME=PonyBold START_MODEL=tha GROUND_TRUTH_DIR=data/PonyBold-ground-truth  TESSDATA=../../../../usr/local/share/tessdata MAX_ITERATIONS=1000
+    TESSDATA_PREFIX=../../../../usr/local/share/tessdata make training MODEL_NAME=MNNamkhangSai START_MODEL=tha TESSDATA=../../../../usr/local/share/tessdata MAX_ITERATIONS=1000
+TESSDATA_PREFIX=../../../../usr/local/share/tessdata make training MODEL_NAME=iannnnn-DOG-Regular START_MODEL=tha TESSDATA=../../../../usr/local/share/tessdata MAX_ITERATIONS=1000
+TESSDATA_PREFIX=../../../../usr/local/share/tessdata make training MODEL_NAME=Pla-kao START_MODEL=tha TESSDATA=../../../../usr/local/share/tessdata MAX_ITERATIONS=1000
 
 sudo cp tha.traineddata /usr/local/share/tessdata
+
+sudo cp tha-hand.traineddata /usr/local/share/tessdata
+
+combine_tessdata -e /usr/local/share/tessdata/tha.traineddata tha-hand.lstm
+
+text2image --fonts_dir=/home/seenam/.fonts --font=PonyBold --text=data/PonyBold-ground-truth/tha_0.gt.txt --outputbase=data/PonyBold-ground-truth/tha_0
